@@ -100,16 +100,3 @@ class Trip
     Guest.all.find{|g| g == trip.guest_name}
   end
 end #Trip Class
-
-# =====================================================
-new_guest = Guest.new(name: "Arti")
-new_guest2 = Guest.new(name: "Smarti")
-new_guest3 = Guest.new(name: "Megan")
-listing = Listing.new(city: "Seattle")
-listing3 = Listing.new(city: "Seattle")
-listing2 = Listing.new(city: "London")
-new_trip = Trip.new(guest_name: new_guest, listing_city: listing)
-new_trip2 = Trip.new(guest_name: new_guest2, listing_city: listing)
-new_trip3 = Trip.new(guest_name: new_guest2, listing_city: listing2)
-new_trip3 = Trip.new(guest_name: new_guest, listing_city: listing2)
-new_trip3 = Trip.new(guest_name: new_guest3, listing_city: listing2)
