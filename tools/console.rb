@@ -39,30 +39,4 @@ new_trip3 = Trip.new(guest_name: new_guest2, listing_city: listing2)
 new_trip3 = Trip.new(guest_name: new_guest, listing_city: listing2)
 new_trip3 = Trip.new(guest_name: new_guest3, listing_city: listing2)
 
-# Bakery Data
-# ============
-# b1 = Bakery.new(name: "Lola")
-# b2 = Bakery.new(name: "Rainbow")
-# b3 = Bakery.new(name: "NoMoo")
-# b4 = Bakery.new(name: "Glutton")
-#
-# i1 = Ingredient.new(name: "Eggs", calorie_count: 100)
-# i2 = Ingredient.new(name: "Almond Milk", calorie_count: 130)
-# i3 = Ingredient.new(name: "Coconut Flour", calorie_count: 400)
-# i4 = Ingredient.new(name: "Oat Cream", calorie_count: 227)
-# i5 = Ingredient.new(name: "Apple", calorie_count: 321)
-#
-# d1 = Dessert.new(name: "Apple Cake", bakery_name: b1, ingredient_name: [i1, i5, i3])
-# d2 = Dessert.new(name: "Orange Cake", bakery_name: b1, ingredient_name: [i2, i1, i3, i4])
-# d3 = Dessert.new(name: "Peanut Butter Cookies", bakery_name: b1, ingredient_name: [i4, i1, i5, i3, i2])
-# d4 = Dessert.new(name: "Pineapple Cake", bakery_name: b2, ingredient_name: [i3, i4])
-# d5 = Dessert.new(name: "Chocolate Cake", bakery_name: b2, ingredient_name: [i1, i2])
-# d6 = Dessert.new(name: "Spinach Roll", bakery_name: b2, ingredient_name: [i4, i5, i2])
-# d7 = Dessert.new(name: "Chickpea Bites", bakery_name: b3, ingredient_name: [i1, i3])
-# d8 = Dessert.new(name: "Red Cake", bakery_name: b3, ingredient_name: [i5, i1])
-# d9 = Dessert.new(name: "Blue Cake", bakery_name: b3, ingredient_name: [i4, i1])
-# d10 = Dessert.new(name: "Decadent Cake", bakery_name: b4, ingredient_name: [i3, i5])
-# d11 = Dessert.new(name: "Greedy Cake", bakery_name: b4, ingredient_name: [i2, i1, i5, i3])
-
-
 Pry.start
