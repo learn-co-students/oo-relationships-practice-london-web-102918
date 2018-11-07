@@ -14,7 +14,7 @@ class Listing
   end
 
   def guests
-    Trip.all.select{|t| t.listing_city == self}.map{|trip| trip.guest_name.name}
+    trips.map{|trip| trip.guest_name.name}
   end
 
   def trips
@@ -22,7 +22,7 @@ class Listing
   end
 
   def trip_count
-    Trip.all.select{|t| t.listing_city == self}.length
+    trips.length
   end
 
   def self.find_all_by_city(city)
@@ -50,13 +50,7 @@ class Guest
   end
 
   def listings
-    guest_trips = []
-    Trip.all.select do|trip|
-      if trip.guest_name == self
-        guest_trips << trip
-      end
-    end
-    guest_trips.map{|l| l.listing_city}
+    trips.map{|l| l.listing_city}
   end
 
   def trips
